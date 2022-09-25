@@ -1,0 +1,102 @@
+html {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: aliceblue;
+}
+
+#main-doc {
+    float: right;
+    width: 75%;
+    margin: 10px 30px 20px 30px;
+}
+
+#navbar {
+    width: 250px;
+    height: 800px;
+    margin-top: -10px;
+    border-right: 2px solid gray;
+    float: left;
+    position: fixed;
+}
+
+h1 {
+    font-size: 25px;
+    font-weight: 100;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: normal;
+}
+
+p {
+    line-height: 30px;
+}
+
+code {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    line-height: 30px;
+    border: 1px solid gray;
+    background-color:beige;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 15px;
+    width: 90%;
+  }
+
+#navbar > header > ul > li {
+    list-style-type: none;
+    padding: 20px;
+    border-top: 1px solid black;
+    margin-left: -50px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+#navbar > header > ul > li > a {
+    display: block;
+    text-decoration: none;
+    color: brown;
+    cursor: pointer;
+}
+
+@media (min-width: 300px) and (max-width: 1150px) {
+    
+    body {
+        overflow-x: hidden;
+    }
+    
+    #navbar {
+        position: unset;
+        border-right: unset;
+        
+    }
+    
+    #navbar .nav-ul {
+        width: 481%;
+        height: 200px;
+        border-top: 1px solid black;
+        border-bottom: 2px solid black;
+        border-right: 2px solid black;
+        border-left: 2px solid black;
+        margin-top: 10px;
+        position: relative;
+        overflow: auto; 
+        margin-left: -4%;
+    }
+    
+    #navbar header h1 {
+        width: 500%;
+        display: block;
+        font-size: 30px;
+        word-break:normal;
+        margin-left: 150%;
+    }
+
+    #main-doc {
+        width:auto;
+        margin-top: 10px;
+        margin-right: 0%;       
+    }
+}
